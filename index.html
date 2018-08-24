@@ -12,46 +12,48 @@
     <h1 class="jumbotron">Pick Your Pie, It's Zaw Time!</h1>
     <form id="pizzaOrder">
       <h2>Size</h2>
-      <select name="cars">
+      <select id="size" name="size">
         <option value="small">Small</option>
         <option value="medium">medium</option>
         <option value="large">Large</option>
       </select>
       <h2>Toppings</h2>
       <div>
-        <input type="radio" name="topping" value="pepperoni">
+        <input class="topping" type="checkbox" name="topping" value="pepperoni">
         <label>Pepperoni</label>
       </div>
       <div>
-        <input type="radio" name="topping" value="sausage">
+        <input class="topping" type="checkbox" name="topping" value="sausage">
         <label>Sausage</label>
       </div>
       <div>
-        <input type="radio" name="topping" value="bacon">
+        <input class="topping" type="checkbox" name="topping" value="bacon">
         <label>Bacon</label>
       </div>
       <div>
-        <input type="radio" name="topping" value="ham">
+        <input class="topping" type="checkbox" name="topping" value="ham">
         <label>Ham</label>
       </div>
       <div>
-        <input type="radio" name="topping" value="pinapple">
+        <input class="topping" type="checkbox" name="topping" value="pinapple">
         <label>Pinapple</label>
       </div>
       <div>
-        <input type="radio" name="topping" value="greenPepper">
+        <input class="topping" type="checkbox" name="topping" value="greenPepper">
         <label>Green Peppers</label>
       </div>
       <div>
-        <input type="radio" name="topping" value="olves">
+        <input class="topping" type="checkbox" name="topping" value="olves">
         <label>Olives</label>
       </div>
       <div>
-        <input type="radio" name="topping" value="onion">
+        <input class="topping" type="checkbox" name="topping" value="onion">
         <label>Onion</label>
       </div>
     <button class="button btn-success"type="submit">Order</button>
   </form>
+  <div class="result">
+  </div>
 </div>
 </body>
 </html>
