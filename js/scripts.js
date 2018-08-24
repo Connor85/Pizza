@@ -12,11 +12,11 @@ Pizza.prototype.order = function() {
   return "<p>" + "Your " + this.size + " " + this.toppingOne + " "+ this.toppingTwo + " " + this.toppingThree + " pizza " + "and " + this.sideOrder + " will arrive soon." + "</p>";
 }
 
-var price = 10
-var cost = function (prices){
-  if (size === medium){
-    return prices + 5
-  } else if (size === large){
+var prices = 12
+var cost = function(prices) {
+  if (size === ("#medium"))
+  {return prices + 5
+  } else if (size === ("#large")){
     return prices + 10
   } else {
     return prices
@@ -37,7 +37,7 @@ $(document).ready(function(){
 
     var newPizza = new Pizza (inputtedSize, inputtedToppingOne, inputtedToppingTwo, inputtedToppingThree, inputtedSideOrder);
 
-    $("#result").append("<p>" + newPizza.order() + "$" + cost(price) + "</p>");
+    $("#result").append("<p>" + newPizza.order() + "$" + cost(prices) + "</p>");
 
     $('#size').val(" ");
     $('#toppingOne').val(" ");
