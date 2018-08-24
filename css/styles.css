@@ -3,6 +3,9 @@ body  {
   background-color: lightgray;
 }
 
+h1  {
+  text-align: center;
+}
 .delivery-info  {
   display: none;
 }
@@ -11,7 +14,25 @@ body  {
   margin-bottom: 30px;
 }
 
+img {
+  height: 100px;
+}
+
+.pizza {
+  position: relative;
+  left: 100px;
+}
 button  {
   display: block;
   margin-top: 30px;
+  font-size: 40px;
+  border-radius: 8px;
+}
+
+button:hover  {
+  cursor: pointer;
+}
+
+pt {
+  font-size: 25px;
 }
