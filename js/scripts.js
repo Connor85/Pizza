@@ -12,9 +12,13 @@ $(document).ready(function(){
     event.preventDefault();
 
     var inputtedSize = $("#size");
-    var inputtedTopping = $("topping")
+    var inputtedToppingOne = $("#toppingOne")
+    var inputtedToppingOne = $("#toppingTwo")
+    var inputtedToppingOne = $("#toppingThree")
 
     $('#size').val(" ");
-    $('topping').val('');
+    $('#toppingOne').val(" ");
+    $('#toppingTwo').val(" ")
+    $('#toppingThree').val(" ")
   });
 });
