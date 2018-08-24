@@ -15,64 +15,95 @@
         <div class="col-md-12">
           <h2>Size</h2>
           <select id="size" name="size">
-          <option id="small" value="small">Small</option>
-          <option id="medium" value="medium">Medium</option>
-          <option id="large" value="large">Large</option>
-        </select>
+            <option id="small" value="small">Small</option>
+            <option id="medium" value="medium">Medium</option>
+            <option id="large" value="large">Large</option>
+          </select>
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-md-4">
-        <h2>Topping 1</h2>
-        <select id="toppingOne" name="toppingOne">
-          <option value="pepperoni">Pepperoni</option>
-          <option value="sausage">Sausage</option>
-          <option value="Bacon">Bacon</option>
-          <option value="ham">Ham</option>
-          <option value="pinapple">Pinapple</option>
-          <option value="greenPepper">Green Peppers</option>
-        </select>
+      <div class="row">
+        <div class="col-md-4">
+          <h2>Topping 1</h2>
+          <select id="toppingOne" name="toppingOne">
+            <option value="pepperoni">Pepperoni</option>
+            <option value="sausage">Sausage</option>
+            <option value="Bacon">Bacon</option>
+            <option value="ham">Ham</option>
+            <option value="pinapple">Pinapple</option>
+            <option value="greenPepper">Green Peppers</option>
+          </select>
+        </div>
+        <div class="col-md-4">
+          <h2>Topping 2</h2>
+          <select id="toppingTwo" name="toppingTwo">
+            <option value="pepperoni">Pepperoni</option>
+            <option value="sausage">Sausage</option>
+            <option value="Bacon">Bacon</option>
+            <option value="ham">Ham</option>
+            <option value="pinapple">Pinapple</option>
+            <option value="greenPepper">Green Peppers</option>
+          </select>
+        </div>
+        <div class="col-md-4">
+          <h2>Topping 3</h2>
+          <select id="toppingThree" name="toppingThree">
+            <option value="pepperoni">Pepperoni</option>
+            <option value="sausage">Sausage</option>
+            <option value="Bacon">Bacon</option>
+            <option value="ham">Ham</option>
+            <option value="pinapple">Pinapple</option>
+            <option value="greenPepper">Green Peppers</option>
+          </select>
+        </div>
       </div>
-      <div class="col-md-4">
-        <h2>Topping 2</h2>
-        <select id="toppingTwo" name="toppingTwo">
-          <option value="pepperoni">Pepperoni</option>
-          <option value="sausage">Sausage</option>
-          <option value="Bacon">Bacon</option>
-          <option value="ham">Ham</option>
-          <option value="pinapple">Pinapple</option>
-          <option value="greenPepper">Green Peppers</option>
-        </select>
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Side Order</h2>
+          <select id="sideOrder" name="sideOrder">
+            <option value="wings">Hot Wings</option>
+            <option value="breadSticks">Bread Sticks</option>
+            <option value="cinnamon">Cinnamon Bites</option>
+          </select>
+          <button class="button btn-danger" type="submit">Delivery Information</button>
+        </div>
       </div>
-      <div class="col-md-4">
-        <h2>Topping 3</h2>
-        <select id="toppingThree" name="toppingThree">
-          <option value="pepperoni">Pepperoni</option>
-          <option value="sausage">Sausage</option>
-          <option value="Bacon">Bacon</option>
-          <option value="ham">Ham</option>
-          <option value="pinapple">Pinapple</option>
-          <option value="greenPepper">Green Peppers</option>
-        </select>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12">
-        <h2>Side Order</h2>
-        <select id="sideOrder" name="sideOrder">
-          <option value="wings">Hot Wings</option>
-          <option value="breadSticks">Bread Sticks</option>
-          <option value="cinnamon">Cinnamon Bites</option>
-        </select>
-      </div>
-    </div>
+      <form id="delevery">
+      <div class="col-md-6 delivery-info">
+        <h2>Delivery Info:</h2>
+        <form id="delivery">
+          <div class="form-group">
+            <label for="first-name">First name</label>
+            <input type="text" class="form-control" id="new-first-name">
+          </div>
+          <div class="form-group">
+            <label for="last-name">Last name</label>
+            <input type="text" class="form-control" id="new-last-name">
+          </div>
+          <div class="form-group">
+            <label for="street">Street</label>
+            <input type="text" class="form-control new-street">
+          </div>
+          <div class="form-group">
+            <label for="city">City</label>
+            <input type="text" class="form-control new-city">
+          </div>
+          <div class="form-group">
+            <label for="state">State</label>
+            <input type="text" class="form-control new-state">
+          </div>
+        </div>
+      </form>
     <div class="row">
       <div class="col-md-12">
         <button class="button btn-success"type="submit">Order</button>
       </div>
     </div>
   </form>
-  <div id="result">
+  <div class="row">
+    <div class="col-md-6">
+      <div id="result">
+      </div>
+    </div>
   </div>
 </div>
 </body>
