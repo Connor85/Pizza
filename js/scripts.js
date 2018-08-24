@@ -1,8 +1,14 @@
 // business logic
 
-function Pizza (size,topping) {
+function Pizza (size,toppingOne, toppingTwo, toppingThree) {
   this.size = size;
-  this.topping = topping;
+  this.toppingOne = toppingOne;
+  this.toppingTwo = toppingTwo;
+  this.toppingThree = toppingThree;
+}
+
+Pizza.prototype.order = function() {
+  return "<p>" + "Your" + this.size + this.toppingOne + this.toppingTwo + this.toppingThree + "pizza will arrive soon." + "</p>";
 }
 
 // user logic
@@ -13,8 +19,12 @@ $(document).ready(function(){
 
     var inputtedSize = $("#size");
     var inputtedToppingOne = $("#toppingOne")
-    var inputtedToppingOne = $("#toppingTwo")
-    var inputtedToppingOne = $("#toppingThree")
+    var inputtedToppingTwo = $("#toppingTwo")
+    var inputtedToppingThree = $("#toppingThree")
+
+    var newPizza = new Pizza (inputtedSize, inputtedToppingOne, inputtedToppingTwo, inputtedToppingThree);
+
+    $("#result").append("<p>" + newPizza.order() + "</p>");
 
     $('#size').val(" ");
     $('#toppingOne').val(" ");
