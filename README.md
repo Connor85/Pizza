@@ -21,6 +21,7 @@ _The web application takes a user can order a pizza. The website takes in pizza 
 
 * Open file in a web browser.
 * Clone the repository.
+
 ## Known Bugs
 
 _None._
