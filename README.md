@@ -13,7 +13,8 @@ _The web application takes a user can order a pizza. The website takes in pizza 
 | Spec | Input | Output |
 | :-------------     | :------------- | :------------- |
 | **The program defines a pizza constructor.** | Input: "Large pepperoni pizza" | Output: "Large pepperoni pizza" |
-| **The program allows client to pick size of pi.** | Input: "run" | Output: "This program only accepts numbers." |
+| **The program allows client to pick size of pizza.** | Input: "run" | Output: "This program only accepts numbers." |
+|**The program returns the pizza order.**|Input: "Large pepronni pizza."|Input: "Large pepronni pizza."|
 
 
 
