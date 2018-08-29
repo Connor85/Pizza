@@ -9,17 +9,16 @@ function Pizza (size,toppingOne, toppingTwo, toppingThree, sideOrder) {
 }
 
 Pizza.prototype.order = function() {
-  return "<p>" + "Your " + this.size + " " + this.toppingOne + " "+ this.toppingTwo + " " + this.toppingThree + " pizza " + "and " + this.sideOrder + " will arrive soon." + "</p>";
+  return "Your " + this.size + " " + this.toppingOne + " "+ this.toppingTwo + " " + this.toppingThree + " pizza " + "and " + this.sideOrder + " will  cost ";
 }
 
-var prices = 12
-var cost = function(prices) {
-  if (size === ("#medium"))
-  {return prices + 5
-  } else if (size === ("#large")){
-    return prices + 10
-  } else {
-    return prices
+Pizza.prototype.cost = function() {
+  if (this.size === "small") {
+    return price=12;
+  } else if (this.size === "medium") {
+    return price=16;
+  } else if (this.size === "large") {
+    return price=22;
   }
 }
 
@@ -37,7 +36,15 @@ $(document).ready(function(){
 
     var newPizza = new Pizza (inputtedSize, inputtedToppingOne, inputtedToppingTwo, inputtedToppingThree, inputtedSideOrder);
 
-    $("#result").append("<p>" + newPizza.order() + "$" + cost(prices) + "</p>");
+    $("#result").text(newPizza.order() + "$" + newPizza.cost());
+
+    $('#size').val(" ");
+    $('#toppingOne').val(" ");
+    $('#toppingTwo').val(" ");
+    $('#toppingThree').val(" ");
+    $('#sideOrder').val(" ");
+  });
+});
 
     $('#size').val(" ");
     $('#toppingOne').val(" ");
